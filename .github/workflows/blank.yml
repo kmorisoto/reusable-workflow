@@ -1,0 +1,9 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  reusable_workflow_job:
+    uses: kmorisoto/reusable-workflow/.github/workflows/greetings.yml@main
