@@ -9,3 +9,8 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+
+      - run: |
+          echo "::error file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
+          echo "::add-mask::Mona The Octocat"
+          echo '::warning:: This is a warning message, to demonstrate that commands are being processed.'
