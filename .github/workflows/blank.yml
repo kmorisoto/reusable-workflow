@@ -1,8 +1,12 @@
 name: CI
 
 on:
-  workflow_dispatch:
-
+  workflow_dispatch: {}
+  
+  pull_request:
+    types: 
+      - opened
+      
 
 jobs:
   reusable_workflow_job:
